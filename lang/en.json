@@ -1,0 +1,27 @@
+{
+    "lang.selected":"EN",
+
+    "subtitle":"Self-taught frontend developer in the way to fullstack.",
+
+    "skills":"Tecnologies i feel comfortable with",
+
+    "home":"HOME",
+    "projects":"PERSONAL PROJECTS",
+    "about":"ABOUT ME",
+    "contact":"CONTACT ME",
+
+    "hi":"Hi, my name is :",
+    "i-am":"I am a frontend developer in the road to fullstack.",
+
+
+    "about-text":"My name is Daniel Fernando Estrada Escaray, im a Computer Technician and self-taught Frontend developer, actually i live in Buenos Aires Argentina. At the moment im starting to learn about Backend development while parcticing my Frontend skills. I like to problems and learn new tecnologies and laguages constantly.",
+    "mobile":"Or call me",
+    "mail":"You can send me an e-mail",
+
+
+    "chat.title":"Want to ask me a question?",
+    "placeholder":"Press ENTER to send the message",
+    "connection":"Daniel is connected.",
+    "disconnection":"Daniel is not connected."
+
+}

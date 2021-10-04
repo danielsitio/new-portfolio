@@ -1,0 +1,139 @@
+@import "vars";
+
+.main{
+    padding-left: 100px;
+    padding-right: 100px;
+    h2{
+        font-size: $subtitle-font-size;
+        font-family: $subtitle-font-style;
+        color: $subtitle-font-color;
+    }
+}
+
+
+.section{
+    padding-top: 30px;
+    padding-bottom: 100px;
+    h2{
+        transition: 1s ease-in;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 5px solid white;
+        animation: blink 0.5s step-end infinite alternate;
+        letter-spacing: 5px;
+    }
+  }
+  @keyframes blink {
+    50% {
+        border-color: transparent
+      }
+    }
+.section.appear{
+    h2{
+        width: 100%;
+    }
+}
+.section.disappear{
+    h2{
+        width: 0px;
+    }
+  }
+
+.home{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+        transition: 1.5s cubic-bezier(1,1.03,.83,1.05);
+        margin:0;
+        color: $item-hovered-color;
+    }
+    span{
+        transition: 1.5s;
+        opacity: 0.8;
+    }
+}
+
+.home.appear{
+    h1{
+        transform: none;
+    }
+    span{
+        opacity: 1;
+    }
+    
+}
+.home.disappear{
+    h1{
+        transform: translateX(-150%);
+    }
+    span{
+        opacity: 0;
+    }
+}
+.about{
+    .about_container{
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        p{
+            transition: 0.5s;
+        }
+        .tecnologies_list{
+            display: grid;
+            grid-template-columns: repeat(3, minmax(140px, 200px));
+            gap: 15px;
+            .tecnologie_item{
+                font-family: $subtitle-font-style;
+                font-size: $parrafo-font-size;
+                color: $item-hovered-color;
+            }
+        }
+        .profile{
+            filter: grayscale(100%);
+            border-radius: 10px;
+            
+        }
+    }
+}
+.about.appear{
+    p{
+        opacity: 1;
+    }
+}
+.about.disappear{
+    p{
+        opacity: 0;
+    }
+}
+
+.contact{
+    
+    .subtitle{
+        margin-left: 100px;
+        margin-right: 100px;
+        text-align: center;
+    }
+}
+
+@media (max-width:800px) {
+    .main{
+        padding-left: 25px;
+        padding-right: 25px;
+        .section{
+            h2{
+                overflow: auto;
+            }
+        }
+        .about{
+            .about_container{
+                display:block;
+                .profile_container{
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+   
+    
+    
+}
