@@ -80,6 +80,8 @@
         column-gap: 30px;
         p{
             transition: 0.5s;
+            letter-spacing: 1px;
+            line-height: calc($parrafo-font-size + 20px);
         }
         .tecnologies_list{
             display: grid;
@@ -114,7 +116,53 @@
         opacity: 0;
     }
 }
+.projects{
 
+    .card_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        .card{
+            outline: 2px solid $item-hovered-color;
+            background-color: #1b1f23;
+            border-radius: 10px;
+            overflow: hidden;
+            .card_text{
+                scrollbar-color: $item-hovered-color #1b1f23 ;
+                scrollbar-width: thin;
+                max-height: 200px;
+                overflow: auto;
+                padding-left: 20px;
+                padding-right  : 20px;
+                h3{
+                    margin: 0;
+                    margin-top: 20px;
+                    font-family: $title-font-style;
+                    font-size: $subtitle-font-size;
+                }
+                p{
+                    font-family: $parrafo-font-style;
+                    font-size: 15px;
+                }
+            }
+            .card_links{
+                background-color: transparent;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: $subtitle-font-style;
+                font-size: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                a{
+                    color: $item-hovered-color;
+                    letter-spacing: 5px;    
+                }
+            }
+        }
+        
+    }
+}
 .contact{
     position: relative;
     .subtitle{
@@ -126,7 +174,6 @@
 .contact::after{
     position: absolute;
     content: "";
-
     bottom: 30px;
     right: 0px;
     width: 0;
@@ -139,7 +186,7 @@
 .footer{
     z-index: 1000;
     position: fixed;
-    right: 25px;
+    right: 15px;
     bottom: 10px;
 
     display: flex;
@@ -171,8 +218,9 @@
 
         }
         .about{
+            
             .about_container{
-                display:block;
+                display:inline-block;
                 .tecnologies_list{
                     display: grid;
                     grid-template-columns: repeat(2, minmax(140px, 200px));
@@ -182,6 +230,12 @@
                 
                     max-width: 200px;
                 }
+            }
+        }
+        .projects{
+            .card_container{
+                grid-template-columns: 1fr  ;
+                grid-template-rows: 1fr;
             }
         }
         .contact{
@@ -194,7 +248,7 @@
             content: "";
         
             bottom: 0px;
-            right: 50%;
+            right: 45%;
             border-color: $item-hovered-color transparent  transparent   ;
         }
     }

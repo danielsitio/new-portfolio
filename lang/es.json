@@ -1,21 +1,17 @@
 {
-    "lang.selected":"ES",
-
-    "subtitle":"Desarrollador frontend autodidacta en camino a fullstack",
-    "skills":"Tecnologias con las que me siento confortable",
-
     "home":"INICIO",
-    "projects":"PROYECTOS",
+    "projects":"PROYECTOS PERSONALES",
     "about":"ACERCA DE MI",
     "contact":"CONTACTAME",
 
     "hi":"Hola, mi nombre es :",
     "i-am":"Soy un desarrollador frontend en camino a fullstack.",
 
-    "about-text":"Mi nombre es Daniel Fernando Estrada Escaray, soy Técnico en Informatica y desarrollador Frontend autodidacta, actualmente resido en Buenos Aires Argentina. En este momento estoy comenzando a aprender sobre desarrollo Backend mientras practico mis habilidades de Frontend. Me gusta resolver problemas y aprender nuevas tecnologias y lenguajes constantemente.",
+    "about-text":"Mi nombre es Daniel Fernando Estrada Escaray, soy Técnico en Informatica y desarrollador Frontend autodidacta, actualmente resido en Buenos Aires Argentina. Aunque ya sabía algo de programación desde la secundaria, comenze a coger interes en el desarrrollo web este año, mas precisamente la parte frontend. Estoy constantemente aprendiendo intentando hacer proyectos personales y averiguando como los puedo hacer. Como pasatiempo me gusta aprender nuevos lenguages y descubrir nueva música, actualmente estoy aprendiendo japónes e inglés.",
     "skills-text":"He aqui algunas teconologias con las que me siento comodo trabajando:",
-    "mobile":"O llamarme",
-    "mail":"Puedes enviarme un e-mail",
+
+    "ezapi-description":"Esta pagina conecta con una api que hice con Python para crear plantillas para comenzar a hacer apis aunque por ahora solo las plantillas de Python estan estructuradas. Ire agregando lenguages y otras caracteristicas a medida que vaya aprendiendo como hacerlas mientras trabajo en otros proyectos.",
+    "visit":"Visitar página",
 
     "contact-subtitle":"¿Tienes alguna pregunta?, aqui puedes tener chatear conmigo en caso de estar disponible. Si no, siempre puedes dejarme un mail en mi correo.",
     "placeholder":"Presiona ENTER para enviar el mensaje",

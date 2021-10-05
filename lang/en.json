@@ -1,10 +1,4 @@
 {
-    "lang.selected":"EN",
-
-    "subtitle":"Self-taught frontend developer in the way to fullstack.",
-
-    "skills":"Tecnologies i feel comfortable with",
-
     "home":"HOME",
     "projects":"PERSONAL PROJECTS",
     "about":"ABOUT ME",
@@ -14,11 +8,11 @@
     "i-am":"I am a frontend developer in the road to fullstack.",
 
 
-    "about-text":"My name is Daniel Fernando Estrada Escaray, im a Computer Technician and self-taught Frontend developer, actually i live in Buenos Aires Argentina. At the moment im starting to learn about Backend development while parcticing my Frontend skills. I like to problems and learn new tecnologies and laguages constantly.",
+    "about-text":"My name is Daniel Fernando Estrada Escaray, im a Computer Technician and self-taught Frontend developer, actually i live in Buenos Aires Argentina. Even though i already knew some things about programming since highschool, i started to gain interst in web development this year, frontend development to be precise. I am constantly learning trying to make personal projects and searching a way to make them. As a hobby i like to learn new languages and discover new music, right now im learning japanese and english.",
     "skills-text":"Here a list of tecnologies i feel comfortable with:",
-    "mobile":"Or call me",
-    "mail":"You can send me an e-mail",
 
+    "ezapi-description":"This page uses an api that i made with Python to make templates to start making apis, although, right now only the Python templates are structured. I will add languages nad some other features as i learn how to do them while working in other projects.",
+    "visit":"Visit site",
 
     "contact-subtitle":"Do you have any question?, here you can chat with me if i'm avaliable. If not, you can always send me an email.",
 

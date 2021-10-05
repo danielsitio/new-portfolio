@@ -13,8 +13,8 @@ import english from '../lang/en.json'
 import spansih from '../lang/es.json'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope,faMobileAlt } from '@fortawesome/free-solid-svg-icons'
-import {faGithub,faSkype} from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope,faMobileAlt,faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
+import {faGithub,faLinkedin,faSkype} from '@fortawesome/free-brands-svg-icons'
 
 
 
@@ -29,7 +29,7 @@ export default function Home() {
   useEffect(() => {
     const options={
       root:null,
-      threshold:0.5,
+      threshold:0.4,
       rootMargin:"0px"
     }
     const observer= new IntersectionObserver((entries)=>{
@@ -114,7 +114,16 @@ export default function Home() {
           <section id="projects" className={`${styles.section} ${styles.projects}`}>
             <h2 className={styles.title}><FormattedMessage id="projects"/></h2>
             <div className={styles.card_container}>
-              <Image src="/ezapi.png" layout="responsive" width="5" height="3"/>
+              <div className={styles.card}>
+                <Image src="/ezapi.png" layout="responsive" width="5" height="3" className={styles.card_image}/>
+                <div className={styles.card_text}>
+                  <h3>EZ API</h3>
+                  <p><FormattedMessage id="ezapi-description"/></p>
+                </div>
+                <div className={styles.card_links}>
+                  <a href="https://ezapi.vercel.app/" target="_blank" rel="noreferrer"><FormattedMessage id="visit"/><FontAwesomeIcon icon={faExternalLinkAlt}/></a>
+                </div>
+              </div>
             </div>
           </section>
 
@@ -130,8 +139,7 @@ export default function Home() {
         <footer className={styles.footer}>
           <ul className={styles.contact_list}>
             <li className={styles.list_item}><a href="https://github.com/danielsitio" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub}/></a></li>
-            <li className={styles.list_item}><a href=""><FontAwesomeIcon icon={faSkype}/></a></li>
-            <li className={styles.list_item}><a href=""><FontAwesomeIcon icon={faMobileAlt}/></a></li>
+            <li className={styles.list_item}><a href="https://www.linkedin.com/in/daniel-fernando-estrada-escaray-004981222/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin}/></a></li>
             <li className={styles.list_item}><a href="mailto:danest.esc@gmail.com"><FontAwesomeIcon icon={faEnvelope}/></a></li>
           </ul>
           <div>
