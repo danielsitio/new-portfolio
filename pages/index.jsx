@@ -1,19 +1,29 @@
 import Head from 'next/head'
 import Image from 'next/image'
+
 import styles from '../styles/Home.module.scss'
 
 import Navbar from '../components/Navbar'
+import Chat from '../components/Chat'
 
 import { useEffect,useState } from 'react'
 
 import {IntlProvider,FormattedMessage} from 'react-intl'
 import english from '../lang/en.json'
 import spansih from '../lang/es.json'
-import About from '../components/About'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope,faMobileAlt } from '@fortawesome/free-solid-svg-icons'
+import {faGithub,faSkype} from '@fortawesome/free-brands-svg-icons'
+
+
 
 export default function Home() {
 
   const [language, setLanguage] = useState(english)
+
+  const [conect, setConect] = useState("Daniel is connected")
+  const [desconect, setDesconect] = useState("Daniel is not connected")
 
   
   useEffect(() => {
@@ -41,9 +51,13 @@ export default function Home() {
   function changeLanguage(lang){
     switch (lang) {
       case "en":
+        setDesconect("Daniel is not connected")
+        setConect("Daniel is connected")
         setLanguage(english)
         break;
       case "es":
+        setDesconect("Daniel no esta conectado")
+        setConect("Daniel esta conectado")
         setLanguage(spansih)
         break;
       default:
@@ -75,7 +89,7 @@ export default function Home() {
             <div className={styles.about_container}>
               <div>
                   <p><FormattedMessage id="about-text"/></p>
-                  <p>He aqui algunas teconologias con las que me siento comodo trabajando :</p>
+                  <p><FormattedMessage id="skills-text"/></p>
                   <ul className={styles.tecnologies_list}>
                     <li className={styles.tecnologie_item}><a target="_blank" rel="noreferrer" href="https://developer.mozilla.org/es/docs/Web/JavaScript">JavaScript</a></li>
                     <li className={styles.tecnologie_item}><a target="_blank" rel="noreferrer" href="https://developer.mozilla.org/es/docs/Web/HTML">HTML</a></li>
@@ -92,21 +106,38 @@ export default function Home() {
                   </ul>
               </div>
               <div className={styles.profile_container}>
+                <Image src="/profile.jpg" layout="responsive" width="4" height="5" className={styles.profile} />
               </div>
             </div>
           </section>
 
           <section id="projects" className={`${styles.section} ${styles.projects}`}>
             <h2 className={styles.title}><FormattedMessage id="projects"/></h2>
+            <div className={styles.card_container}>
+              <Image src="/ezapi.png" layout="responsive" width="5" height="3"/>
+            </div>
           </section>
 
          
           <section id="contact" className={`${styles.section} ${styles.contact}`}>
             <h2 className={styles.title}><FormattedMessage id="contact"/></h2>
-            <p className={styles.subtitle}>Have some time? you can ask me questions here if i am avaliable</p>
+            <p className={styles.subtitle}><FormattedMessage id="contact-subtitle"/></p>
+            <Chat conectMessage={conect} desconectMessage={desconect}/>
           </section>
 
         </main>
+
+        <footer className={styles.footer}>
+          <ul className={styles.contact_list}>
+            <li className={styles.list_item}><a href="https://github.com/danielsitio" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub}/></a></li>
+            <li className={styles.list_item}><a href=""><FontAwesomeIcon icon={faSkype}/></a></li>
+            <li className={styles.list_item}><a href=""><FontAwesomeIcon icon={faMobileAlt}/></a></li>
+            <li className={styles.list_item}><a href="mailto:danest.esc@gmail.com"><FontAwesomeIcon icon={faEnvelope}/></a></li>
+          </ul>
+          <div>
+            
+          </div>
+        </footer>
       </IntlProvider>
     </div>
   )

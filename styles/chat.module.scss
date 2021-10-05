@@ -1,0 +1,73 @@
+@import "vars";
+.chat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .chat_box{
+
+        outline: 1px solid $item-hovered-color;
+
+        width: 70vw;
+        max-width: 600px;
+        height: 40vh;
+
+
+        overflow: auto;
+        border-radius: 10px;
+
+        display: flex;
+        flex-direction: column;
+        scroll-behavior: smooth;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+        scrollbar-color: $item-hovered-color $bg-color ;
+        scrollbar-width: thin;
+        .user_message,.daniel_message{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            width: fit-content;
+            max-width: 80%;
+            word-wrap: break-word;
+            box-shadow: 0 0 2px $item-hovered-color;
+            border-radius: 7px;
+            padding: 10px;
+            animation: message-aparecer 0.15s cubic-bezier(.89,.85,.76,1.5);
+            animation-delay: 0.1s;
+            font-family: $title-font-style;
+        }
+        .user_message{
+            background-color: white   ;
+            color: black;
+        }
+        .daniel_message{
+            align-self: flex-end;
+            background-color: black;
+        }
+    }
+    
+    .chat_input{
+        margin-top: 10px;
+        border-radius: 5px;
+        width: 60vw;
+        height: 30px;
+        max-width: 600px;
+        border: none;
+    }
+    .chat_input:focus{
+        outline: 2px solid $item-hovered-color;
+    }
+    
+}
+
+@keyframes message-aparecer {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: none;
+    }
+}

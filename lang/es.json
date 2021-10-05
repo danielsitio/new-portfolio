@@ -13,10 +13,11 @@
     "i-am":"Soy un desarrollador frontend en camino a fullstack.",
 
     "about-text":"Mi nombre es Daniel Fernando Estrada Escaray, soy Técnico en Informatica y desarrollador Frontend autodidacta, actualmente resido en Buenos Aires Argentina. En este momento estoy comenzando a aprender sobre desarrollo Backend mientras practico mis habilidades de Frontend. Me gusta resolver problemas y aprender nuevas tecnologias y lenguajes constantemente.",
+    "skills-text":"He aqui algunas teconologias con las que me siento comodo trabajando:",
     "mobile":"O llamarme",
     "mail":"Puedes enviarme un e-mail",
 
-    "chat.title":"¿Quieres preguntarme algo?",
+    "contact-subtitle":"¿Tienes alguna pregunta?, aqui puedes tener chatear conmigo en caso de estar disponible. Si no, siempre puedes dejarme un mail en mi correo.",
     "placeholder":"Presiona ENTER para enviar el mensaje",
 
     "connection":"Daniel esta conectado.",

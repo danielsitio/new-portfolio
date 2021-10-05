@@ -6,7 +6,7 @@
     h2{
         font-size: $subtitle-font-size;
         font-family: $subtitle-font-style;
-        color: $subtitle-font-color;
+        color: $item-hovered-color;
     }
 }
 
@@ -44,7 +44,7 @@
     justify-content: center;
     flex-direction: column;
     h1{
-        transition: 1.5s cubic-bezier(1,1.03,.83,1.05);
+        transition: 1s cubic-bezier(1,1.03,.83,1.05);
         margin:0;
         color: $item-hovered-color;
     }
@@ -56,6 +56,7 @@
 
 .home.appear{
     h1{
+        opacity: 1;
         transform: none;
     }
     span{
@@ -65,7 +66,8 @@
 }
 .home.disappear{
     h1{
-        transform: translateX(-150%);
+        opacity: 0;
+        transform: translateX(-50%);
     }
     span{
         opacity: 0;
@@ -74,7 +76,8 @@
 .about{
     .about_container{
         display: grid;
-        grid-template-columns: 3fr 2fr;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 30px;
         p{
             transition: 0.5s;
         }
@@ -88,11 +91,17 @@
                 color: $item-hovered-color;
             }
         }
-        .profile{
-            filter: grayscale(100%);
-            border-radius: 10px;
-            
+        .profile_container{
+            .profile{
+                filter: grayscale(100%);
+                border-radius: 10px;
+                transition: 0.5s;
+            }
+            .profile:hover{
+                filter: grayscale(0);
+            }
         }
+       
     }
 }
 .about.appear{
@@ -107,31 +116,103 @@
 }
 
 .contact{
-    
+    position: relative;
     .subtitle{
         margin-left: 100px;
         margin-right: 100px;
         text-align: center;
     }
 }
+.contact::after{
+    position: absolute;
+    content: "";
+
+    bottom: 30px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    border-width:  25px;
+    border-style: solid;
+    border-color: transparent transparent transparent $item-hovered-color;
+}
+
+.footer{
+    z-index: 1000;
+    position: fixed;
+    right: 25px;
+    bottom: 10px;
+
+    display: flex;
+    .contact_list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        .list_item{
+            list-style-position: outside;
+            font-size: 50px;
+            transition: 0.5s;
+        }
+        .list_item:hover{
+            transform: translateY(-10px);
+        }
+    }
+}
+
 
 @media (max-width:800px) {
     .main{
         padding-left: 25px;
         padding-right: 25px;
-        .section{
+        .projects{
             h2{
                 overflow: auto;
             }
+
         }
         .about{
             .about_container{
                 display:block;
+                .tecnologies_list{
+                    display: grid;
+                    grid-template-columns: repeat(2, minmax(140px, 200px));
+                }
                 .profile_container{
                     margin-top: 50px;
+                
+                    max-width: 200px;
                 }
             }
         }
+        .contact{
+            .subtitle{
+                margin: 0;
+            }
+        }
+        .contact::after{
+            position: absolute;
+            content: "";
+        
+            bottom: 0px;
+            right: 50%;
+            border-color: $item-hovered-color transparent  transparent   ;
+        }
+    }
+    .footer{
+        left: 0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 100vw;
+        .contact_list{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 30px;
+        }
+
     }
    
     

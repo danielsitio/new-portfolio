@@ -7,6 +7,10 @@ body {
   background: $bg-color;
   scroll-behavior: smooth;
   width: 100vw;
+  overflow-x: hidden;
+
+  scrollbar-color: $item-hovered-color $bg-color ;
+  scrollbar-width: thin;
 }
 a {
   color: inherit;

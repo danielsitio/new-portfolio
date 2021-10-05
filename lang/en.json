@@ -15,11 +15,13 @@
 
 
     "about-text":"My name is Daniel Fernando Estrada Escaray, im a Computer Technician and self-taught Frontend developer, actually i live in Buenos Aires Argentina. At the moment im starting to learn about Backend development while parcticing my Frontend skills. I like to problems and learn new tecnologies and laguages constantly.",
+    "skills-text":"Here a list of tecnologies i feel comfortable with:",
     "mobile":"Or call me",
     "mail":"You can send me an e-mail",
 
 
-    "chat.title":"Want to ask me a question?",
+    "contact-subtitle":"Do you have any question?, here you can chat with me if i'm avaliable. If not, you can always send me an email.",
+
     "placeholder":"Press ENTER to send the message",
     "connection":"Daniel is connected.",
     "disconnection":"Daniel is not connected."
