@@ -124,6 +124,23 @@ export default function Home() {
                   <a href="https://ezapi.vercel.app/" target="_blank" rel="noreferrer"><FormattedMessage id="visit"/><FontAwesomeIcon icon={faExternalLinkAlt}/></a>
                 </div>
               </div>
+              <div className={styles.card}>
+                <Image src="/ip-locator.png" layout="responsive" width="5" height="3" className={styles.card_image}/>
+                <div className={styles.card_text}>
+                  <h3>IP Address Traker</h3>
+                  <p>
+                    <FormattedMessage id="ip-description1"/>
+                    <a href="https://geo.ipify.org/" target="_blank" rel="noreferrer">ipify</a>
+                    <FormattedMessage id="ip-description2"/>
+                    <a href="https://leafletjs.com/" target="_blank" rel="noreferrer">Leaflet</a>
+                    <FormattedMessage id="ip-description3"/>
+                    <a href="https://www.frontendmentor.io/" target="_blank" rel="noreferrer">Frontend Mentor</a>.
+                  </p>
+                </div>
+                <div className={styles.card_links}>
+                  <a href="https://ip-locator-tawny.vercel.app" target="_blank" rel="noreferrer"><FormattedMessage id="visit"/><FontAwesomeIcon icon={faExternalLinkAlt}/></a>
+                </div>
+              </div>
             </div>
           </section>
 

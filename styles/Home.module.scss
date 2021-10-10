@@ -121,6 +121,7 @@
     .card_container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 50px;
         
         .card{
             outline: 2px solid $item-hovered-color;
@@ -138,11 +139,14 @@
                     margin: 0;
                     margin-top: 20px;
                     font-family: $title-font-style;
-                    font-size: $subtitle-font-size;
+                    font-size: calc($parrafo-font-size + 10px);
                 }
                 p{
                     font-family: $parrafo-font-style;
                     font-size: 15px;
+                    a{
+                        color: $item-hovered-color;
+                    }
                 }
             }
             .card_links{
@@ -235,7 +239,8 @@
         .projects{
             .card_container{
                 grid-template-columns: 1fr  ;
-                grid-template-rows: 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-row-gap: 50px;
             }
         }
         .contact{
@@ -249,7 +254,7 @@
         
             bottom: 0px;
             right: 45%;
-            border-color: $item-hovered-color transparent  transparent   ;
+            border-color: $item-hovered-color transparent  transparent;
         }
     }
     .footer{

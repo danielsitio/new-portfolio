@@ -11,6 +11,10 @@
     "skills-text":"He aqui algunas teconologias con las que me siento comodo trabajando:",
 
     "ezapi-description":"Esta pagina conecta con una api que hice con Python para crear plantillas para comenzar a hacer apis aunque por ahora solo las plantillas de Python estan estructuradas. Ire agregando lenguages y otras caracteristicas a medida que vaya aprendiendo como hacerlas mientras trabajo en otros proyectos.",
+    "ip-description1":"Un localizador de IP's publicas,usa la API de ",
+    "ip-description2":" para averiguar los datos de la IP ingresada y la libreria ",
+    "ip-description3":" para mostrar el mapa. Es un reto de " ,
+
     "visit":"Visitar página",
 
     "contact-subtitle":"¿Tienes alguna pregunta?, aqui puedes tener chatear conmigo en caso de estar disponible. Si no, siempre puedes dejarme un mail en mi correo.",
