@@ -16,7 +16,7 @@ export default function Navbar({changeLanguage}) {
         document.getElementById("menu").classList.toggle(styles.menu_toggled)
     }
     return (
-        <header className={styles.nav}>
+        <header id="nav" className={styles.nav}>
             <div className={styles.lang} onMouseEnter={()=>setIsLangToggled(true)} onMouseLeave={()=>setIsLangToggled(false)}>
               <FontAwesomeIcon icon={faLanguage} className={styles.icon}/>
               <CSSTransition in={isLangToggled} timeout={300} classNames={{

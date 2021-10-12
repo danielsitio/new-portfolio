@@ -1,19 +1,22 @@
 {
     "home":"INICIO",
-    "projects":"PROYECTOS PERSONALES",
+    "projects":"PROYECTOS",
     "about":"ACERCA DE MI",
     "contact":"CONTACTAME",
 
     "hi":"Hola, mi nombre es :",
     "i-am":"Soy un desarrollador frontend en camino a fullstack.",
 
-    "about-text":"Mi nombre es Daniel Fernando Estrada Escaray, soy Técnico en Informatica y desarrollador Frontend autodidacta, actualmente resido en Buenos Aires Argentina. Aunque ya sabía algo de programación desde la secundaria, comenze a coger interes en el desarrrollo web este año, mas precisamente la parte frontend. Estoy constantemente aprendiendo intentando hacer proyectos personales y averiguando como los puedo hacer. Como pasatiempo me gusta aprender nuevos lenguages y descubrir nueva música, actualmente estoy aprendiendo japónes e inglés.",
-    "skills-text":"He aqui algunas teconologias con las que me siento comodo trabajando:",
+    "about-text1":"Mi nombre es Daniel Fernando Estrada Escaray, soy Técnico en Informatica y desarrollador Frontend autodidacta, actualmente resido en Buenos Aires Argentina. En lo que respecta a desarrollo, he elegido a React como mi framework y me encanta, estoy constantemente aprendiendo sobre su ecosistema y mejorando mi produtividad.",
+    "about-text2":"Si bien en este momento estoy enfocado en React, mi objetivo es ser lo mas flexible posible, por lo que siempre estoy dispuesto a aprender nuevas tecnologias con las que trabajar. ",
+    "skills-text":"Estas son las teconologias con las que me siento comodo trabajando:",
 
     "ezapi-description":"Esta pagina conecta con una api que hice con Python para crear plantillas para comenzar a hacer apis aunque por ahora solo las plantillas de Python estan estructuradas. Ire agregando lenguages y otras caracteristicas a medida que vaya aprendiendo como hacerlas mientras trabajo en otros proyectos.",
     "ip-description1":"Un localizador de IP's publicas,usa la API de ",
     "ip-description2":" para averiguar los datos de la IP ingresada y la libreria ",
     "ip-description3":" para mostrar el mapa. Es un reto de " ,
+
+    "rps-description":"Una aplicacion simple para jugar piedra papel o tijera contra la maquina. Es un reto de ",
 
     "visit":"Visitar página",
 

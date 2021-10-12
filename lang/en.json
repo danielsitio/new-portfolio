@@ -1,6 +1,6 @@
 {
     "home":"HOME",
-    "projects":"PERSONAL PROJECTS",
+    "projects":"PROJECTS",
     "about":"ABOUT ME",
     "contact":"CONTACT ME",
 
@@ -8,13 +8,15 @@
     "i-am":"I am a frontend developer in the road to fullstack.",
 
 
-    "about-text":"My name is Daniel Fernando Estrada Escaray, im a Computer Technician and self-taught Frontend developer, actually i live in Buenos Aires Argentina. Even though i already knew some things about programming since highschool, i started to gain interst in web development this year, frontend development to be precise. I am constantly learning trying to make personal projects and searching a way to make them. As a hobby i like to learn new languages and discover new music, right now im learning japanese and english.",
-    "skills-text":"Here a list of tecnologies i feel comfo  rtable with:",
+    "about-text1":"My name is Daniel Fernando Estrada Escaray, im a Computer Technician and self-taught Frontend developer, right now i live in Buenos Aires-Argentina. Regarding development, i have choosen React as my framework and i really like it, i am constantly learning about it's ecosystem and improving my productivity.",
+    "about-text2":"Although  im focusing on React, my objective is to be the most flexible i can, so i am always willing to learn new technologies to work with.",
+    "skills-text":"These are the technologies i feel comfortable with:",
 
     "ezapi-description":"This page uses an api that i made with Python to make templates to start making apis, although, right now only the Python templates are structured. I will add languages nad some other features as i learn how to do them while working in other projects.",
     "ip-description1":"A public IP locator, uses ",
     "ip-description2":"'s API to find out the data of the entered IP and the library ",
     "ip-description3":" to show the map. It's a challange of ",
+    "rps-description":"A simple application to play rock paper scissor against de cpu. It is a challenge of ",
     "visit":"Visit site",
 
     "contact-subtitle":"Do you have any question?, here you can chat with me if i'm avaliable. If not, you can always send me an email.",
